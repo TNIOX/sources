@@ -1,23 +1,5 @@
 #!/usr/bin/env python3
 # coding: UTF8
-"""
-Utilisation :
-# Mode interactif
-sudo python3 arp_spoof.py
-
-# Direct avec arguments
-sudo python3 arp_spoof.py -t 192.168.1.100 -g 192.168.1.1
-
-# Scanner le réseau
-sudo python3 arp_spoof.py -s 192.168.1.0/24
-
-Menu interactif :
-1. Lancer l'ARP Spoofing
-2. Scanner le réseau
-3. Restaurer les tables ARP
-4. Quitter
-Le script nécessite scapy (sudo apt install python3-scapy) et les droits root.
-"""
 
 import scapy.all as scapy
 import time
@@ -42,7 +24,7 @@ def print_banner():
 {Colors.CYAN}{Colors.BOLD}
    ╔══════════════════════════════════════════════╗
    ║           ARP SPOOFING TOOL                  ║
-   ║           by CyberTools4Pentesters           ║
+   ║           by TNiox                           ║
    ╚══════════════════════════════════════════════╝
 {Colors.END}
 """
@@ -50,14 +32,16 @@ def print_banner():
 
 def print_menu():
     menu = f"""
-{Colors.YELLOW}{Colors.BOLD}  ┌─────────────────────────────────────────┐
-  │              MENU PRINCIPAL              │
-  ├─────────────────────────────────────────┤
-  │  {Colors.GREEN}1{Colors.YELLOW} - Lancer l'ARP Spoofing            │
-  │  {Colors.GREEN}2{Colors.YELLOW} - Scanner le réseau               │
-  │  {Colors.GREEN}3{Colors.YELLOW} - Restaurer les tables ARP        │
-  │  {Colors.GREEN}4{Colors.YELLOW} - Quitter                        │
-  └─────────────────────────────────────────┘{Colors.END}
+{Colors.YELLOW}{Colors.BOLD}  
+  ┌──────────────────────────────────────────────────────────────┐
+  │              MENU PRINCIPAL                                  │
+  ├──────────────────────────────────────────────────────────────┤
+  │  {Colors.GREEN}1{Colors.YELLOW} - Lancer l'ARP Spoofing                                   │
+  │  {Colors.GREEN}2{Colors.YELLOW} - Scanner le réseau                                       │
+  │  {Colors.GREEN}3{Colors.YELLOW} - Restaurer les tables ARP                                │
+  │  {Colors.GREEN}4{Colors.YELLOW} - Quitter                                                 │
+  └──────────────────────────────────────────────────────────────┘
+  {Colors.END}
 """
     print(menu)
 
