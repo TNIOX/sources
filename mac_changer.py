@@ -4,7 +4,6 @@
 Utilisation:
 sudo python3 mac_changer.py
 """
-
 """
 MAC Address Changer - Mode interactif
 Change l'adresse MAC d'une interface réseau
@@ -54,7 +53,7 @@ def print_banner():
     ║   ██║ ╚═╝ ██║██║  ██║███████╗╚██████╗                 ║
     ║   ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝   by TNiox      ║
     ║                                                       ║
-    ║          {C.Y}⚡ MAC Address Changer v2.0 ⚡{C.CY}    ║
+    ║          {C.Y}⚡ MAC Address Changer v2.0 ⚡{C.CY}               ║
     ║                                                       ║
     ╚═══════════════════════════════════════════════════════╝
 {C.E}"""
